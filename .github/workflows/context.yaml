@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Dump GitHub context
         id: github_context_step
-        run: eccho '${{ toJSON(github) }}'
+        run: echo '${{ toJSON(github) }}'
       - name: Dump job context
         #failure(): makes step run even if the previous step has failed.
         if: failure()  
