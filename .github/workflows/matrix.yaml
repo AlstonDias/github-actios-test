@@ -15,7 +15,7 @@ jobs:
                     - os: ubuntu-latest
                       node_version: 6
                     - os: macos-latest
-                      node_verison: 8
+                      node_version: 8
             # fail-fast: true  #use to stop running in case one of job fails for values ablove
             # max-parallel: 0  #Determines the number of jobs that can be run in parallel
         runs-on: ${{matrix.os}}
